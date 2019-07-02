@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+#top {
+    background: #7D954D;
+    color: white;
+    font-size: 16px;
+    padding: 16px;
+    height: 10%;
+}
+
+#topname {
+    font-size: 100%;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+form a {
+    text-decoration: none;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.header {
+    font-size: 25px;
+    color: rgb(196, 167, 146);
+}
+
+.register {
+    width: 330px;
+    height: 380px;
+    margin: 35px auto;
+    padding: 30px;
+    box-shadow: 0px 1px 2px 1px #aaaaaa,
+    inset 0px 1px 1px rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+}
+
+form ul {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+ul li div {
+    width: 260px;
+    height: 40px;
+    background: #e1dcd8;
+    color: rgb(98, 94, 91);
+    box-shadow: inset 0px 2px 5px #aaaaaa;
+    border-radius: 5px;
+    position: relative;
+}
+
+ul li div .bad {
+    border: 1px solid #b51b1b;
+    box-shadow: inset 0px 2px 5px rgba(128, 0, 0, 0.3);
+}
+
+ul li div .good {
+    border: 1px solid #16bb16;
+    box-shadow: inset 0px 2px 5px rgba(0, 128, 0, 0.3);
+}
+
+.logo {
+    text-align: center;
+}
+
+
+ul li .username {
+    font-family: iconfont;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+ul li .passwordinput {
+    font-family: iconfont;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+ul li div input {
+    height: 40px;
+    width: 260px;
+    padding: 0 35px;
+    border: none;
+    background: #e1dcd8;
+    color: rgb(98, 94, 91);
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7),
+    inset 0px 2px 5px #aaaaaa;
+    border-radius: 5px;
+}
+
+ul li input:focus {
+    outline: none;
+    background: #f5f2ef;
+}
+
+ul .promise {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(98, 94, 91);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+ul .promise input[type*="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: super;
+    margin-right: 12px;
+}
+
+.promise label {
+    cursor: pointer;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 7px;
+    left: 0;
+    background: #eee;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.promise label:after {
+    opacity: 0.4;
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 5px;
+    background: transparent;
+    top: 6px;
+    left: 4px;
+    border: 3px solid #74884a;
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.promise label:hover::after {
+    opacity: 0.7;
+}
+
+.promise input[type=checkbox]:checked + label:after {
+    opacity: 1;
+    border-color: #74884a;
+}
+
+ul li a {
+    font-size: 14px;
+    color: rgb(152, 142, 135);
+    display: flex;
+    justify-content: center;
+}
+
+.signup {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+ul li input[type*="button"] {
+    width: 100%;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background: -moz-linear-gradient(
+            top,
+            #94aa64 0%,
+            #7a924a 50%,
+            #607738);
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#94aa64),
+            color-stop(0.50, #7a924a),
+            to(#607738));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #7d8862;
+    -moz-box-shadow: 0px 1px 0px rgba(170, 170, 170, 1),
+    inset 0px 1px 1px rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: 0px 1px 0px rgba(170, 170, 170, 1),
+    inset 0px 1px 1px rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 1px 0px rgba(170, 170, 170, 1),
+    inset 0px 1px 1px rgba(255, 255, 255, 0.7);
+    text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.3),
+    0px 0px 0px rgba(255, 255, 255, 0);
+}
+
+ul li input[type*="button"]:hover {
+    opacity: 0.8;
+}
+
+ul li input[type*="button"]:active {
+    width: 100%;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background: -moz-linear-gradient(
+            top,
+            #607738 0%,
+            #7a924a 50%,
+            #94aa64);
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#607738),
+            color-stop(0.50, #7a924a),
+            to(#94aa64));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #7d8862;
+    -moz-box-shadow: 0px -1px 0px rgba(170, 170, 170, 1),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: 0px -1px 0px rgba(170, 170, 170, 1),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.7);
+    box-shadow: 0px -1px 0px rgba(170, 170, 170, 1),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.7);
+    text-shadow: 0px 1px 0px rgba(000, 000, 000, 0.3),
+    0px 0px 0px rgba(255, 255, 255, 0);
+}
