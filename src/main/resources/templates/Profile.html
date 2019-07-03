@@ -3,8 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/Profile.css">
 </head>
 <body>
-
+<ul class="top">
+    <li class="topli"><a class="topa" href="Home.html">Home</a></li>
+    <li class="topli"><a class="topa" href="">Log out</a></li>
+    <li class="topli"><a class="topa" href="">About us</a></li>
+</ul>
+<div class="wrapper">
+    <div class="header">
+    </div>
+    <form class="login" action="/subscribe" method="post">
+        <ul>
+            <li class="logo">
+                <img src="../static/images/logo.png" alt="logo" id="logo"/>
+            </li>
+            <li>
+                <label class="newtext">New user name</label>
+                <div class="text">
+                    <span class="username"></span><input type="text" maxlength="15">
+                </div>
+            </li>
+            <li>
+                <label class="newtext">New password</label>
+                <div class="password">
+                    <span class="passwordinput"></span><input type="password" maxlength="15" id="passwordinput">
+                </div>
+            </li>
+            <li>
+                <input type="button" value="Change profile">
+            </li>
+        </ul>
+    </form>
+</div>
 </body>
 </html>

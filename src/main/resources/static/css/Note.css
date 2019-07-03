@@ -3,8 +3,9 @@
     padding: 0
 }
 
-body{
+body {
     background: url('../../static/images/background.png');
+    text-align: center
 }
 
 .topli {
@@ -45,16 +46,13 @@ body{
     border-right: none;
 }
 
-li {
-    list-style: none;
-}
-
-form a {
-    text-decoration: none;
-}
-
-.wrapper {
-    text-align: center;
+.note {
+    box-shadow: 0px 1px 2px 1px #aaaaaa,
+    inset 0px 1px 1px rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    background-color: white;
+    width: 390px;
+    height: 55%;
     margin: auto;
     position: absolute;
     top: 50%; left: 50%;
@@ -63,101 +61,22 @@ form a {
     transform: translate(-50%, -50%);
 }
 
-.header {
-    font-size: 25px;
-    color: rgb(196, 167, 146);
+#area {
+    border-radius: 4px;
+    border: 2px solid #7D954D;
 }
 
-.login {
-    width: 330px;
-    height: 350px;
-    margin: 35px auto;
-    padding: 30px;
-    box-shadow: 0px 1px 2px 1px #aaaaaa,
-    inset 0px 1px 1px rgba(255, 255, 255, 0.7);
-    border-radius: 3px;
-    background-color: white;
+#notetitle {
+    border-radius: 4px;
+    border: 2px solid #7D954D;
 }
 
-form ul {
-    width: 100%;
-    height: 100%;
-    text-align: left;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
+#date {
+    border-radius: 4px;
+    border: 2px solid #7D954D;
 }
 
-ul li div {
-    width: 260px;
-    height: 40px;
-    background: #e1dcd8;
-    color: rgb(98, 94, 91);
-    box-shadow: inset 0px 2px 5px #aaaaaa;
-    border-radius: 5px;
-    position: relative;
-}
-
-ul li div .bad {
-    border: 1px solid #b51b1b;
-    box-shadow: inset 0px 2px 5px rgba(128, 0, 0, 0.3);
-}
-
-ul li div .good {
-    border: 1px solid #16bb16;
-    box-shadow: inset 0px 2px 5px rgba(0, 128, 0, 0.3);
-}
-
-.logo {
-    text-align: center;
-}
-
-
-ul li .username {
-    font-family: iconfont;
-    position: absolute;
-    top: 12px;
-    left: 10px;
-}
-
-ul li .passwordinput {
-    font-family: iconfont;
-    position: absolute;
-    top: 12px;
-    left: 10px;
-}
-
-ul li div input {
-    height: 40px;
-    width: 260px;
-    padding: 0 35px;
-    border: none;
-    background: #e1dcd8;
-    color: rgb(98, 94, 91);
-    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7),
-    inset 0px 2px 5px #aaaaaa;
-    border-radius: 5px;
-}
-
-ul li input:focus {
-    outline: none;
-    background: #f5f2ef;
-}
-
-ul li a {
-    font-size: 14px;
-    color: rgb(152, 142, 135);
-    display: flex;
-    justify-content: center;
-}
-
-.signup {
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-}
-
-ul li input[type*="button"] {
+input[type*="button"] {
     width: 100%;
     height: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -187,11 +106,11 @@ ul li input[type*="button"] {
     0px 0px 0px rgba(255, 255, 255, 0);
 }
 
-ul li input[type*="button"]:hover {
+input[type*="button"]:hover {
     opacity: 0.8;
 }
 
-ul li input[type*="button"]:active {
+input[type*="button"]:active {
     width: 100%;
     height: 40px;
     font-family: Arial, Helvetica, sans-serif;

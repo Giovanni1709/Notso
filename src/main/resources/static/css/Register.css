@@ -3,17 +3,46 @@
     padding: 0
 }
 
-#top {
-    background: #7D954D;
-    color: white;
-    font-size: 16px;
-    padding: 16px;
-    height: 10%;
+body{
+    background: url('../../static/images/background.png');
 }
 
-#topname {
-    font-size: 100%;
+.topli {
+    display: inline;
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+.topa {
+    display: block;
+    width: 60px;
+}
+
+.top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7D954D;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topli a {
+    display: block;
+    color: white;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topli a:hover {
+    background-color: #94aa64;
+}
+
+.topli:last-child {
+    border-right: none;
 }
 
 li {
@@ -26,6 +55,12 @@ form a {
 
 .wrapper {
     text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .header {
@@ -41,6 +76,7 @@ form a {
     box-shadow: 0px 1px 2px 1px #aaaaaa,
     inset 0px 1px 1px rgba(255, 255, 255, 0.7);
     border-radius: 3px;
+    background-color: white;
 }
 
 form ul {

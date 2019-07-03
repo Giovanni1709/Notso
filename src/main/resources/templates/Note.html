@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Note</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/Note.css">
 </head>
 <body>
-
+<ul class="top">
+    <li class="topli"><a class="topa" href="Profile.html">Profile</a></li>
+    <li class="topli"><a class="topa" href="">Log out</a></li>
+    <li class="topli"><a class="topa" href="">About us</a></li>
+</ul>
+<div class="note">
+    <div id="container">
+        <input type="text" id="notetitle" style="font-size:20px" maxlength="20" placeholder="Title">
+        <textarea id="area" rows="10" cols="50" maxlength="400" placeholder="Please make your note here"></textarea>
+    </div>
+    <div>
+        <input id="date" type="date" value=""/>
+    </div>
+    <nav>
+        <input type="button" value="Submit">
+        <input type="button" value="Cancel">
+    </nav>
+</div>
 </body>
 </html>
